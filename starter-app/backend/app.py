@@ -10,7 +10,7 @@ def health():
 
 @app.route("/api/greeting")
 def greeting():
-    return jsonify({"message": "Hello from the starter backend"})
+    return jsonify({"message": f"Hello from the starter backend, {user_name}"})
 
 
 if __name__ == "__main__":
